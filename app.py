@@ -27,7 +27,7 @@ def describe_attributes():
     st.write("- Bộ dữ liệu bao gồm thông tin về các đặc điểm khác nhau của sinh viên Đại học Duy Tân, nhằm dự đoán điểm trung bình tích lũy (GPA) của họ.")
     st.write("- Bộ dữ liệu bao gồm các thuộc tính cá nhân như tuổi, giới tính, năm học, loại trường phổ thông tốt nghiệp, và tình trạng học bổng, cũng như hoạt động làm việc bán thời gian và tham gia hoạt động ngoại khóa.")
     st.write("- Biến mục tiêu là điểm GPA của sinh viên, được phân loại theo số.")
-    st.write("- Bộ dữ liệu gồm 34 thuộc tính đầu vào.")
+    st.write("- Bộ dữ liệu gồm 20 thuộc tính đầu vào.")
     st.write('===================================================================')
     st.write("## Thông Tin Thuộc Tính")
     st.write("1- Loại trường THPT mà bạn tốt nghiệp là gì?")
