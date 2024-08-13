@@ -112,13 +112,13 @@ def explore_data(df):
     ax.set_title('Tần suất của số giờ học và điểm tích lũy mong đợi')
     st.pyplot(fig)
 
-    df['Điểm trung bình tích lũy (GPA) trong học kỳ gần nhất của bạn là gì?'] = df['Điểm trung bình tích lũy (GPA) trong học kỳ gần nhất của bạn là gì?'].map(expected_GPA_mapping)
-    st.write("#### Bản đồ nhiệt tương quan")
-    data_crosstab = pd.crosstab(df['Tình trạng hôn nhân của cha mẹ bạn là gì?'], df['Điểm trung bình tích lũy (GPA) trong học kỳ gần nhất của bạn là gì?'])
-    fig, ax = plt.subplots()
-    sns.heatmap(data_crosstab, annot=True, cmap="YlGnBu", fmt="d", ax=ax)
-    ax.set_title('Liên hệ giữa hoàn cảnh gia đình và kết quả học tập')
-    st.pyplot(fig)
+    # df['Điểm trung bình tích lũy (GPA) trong học kỳ gần nhất của bạn là gì?'] = df['Điểm trung bình tích lũy (GPA) trong học kỳ gần nhất của bạn là gì?'].map(expected_GPA_mapping)
+    # st.write("#### Bản đồ nhiệt tương quan")
+    # data_crosstab = pd.crosstab(df['Tình trạng hôn nhân của cha mẹ bạn là gì?'], df['Điểm trung bình tích lũy (GPA) trong học kỳ gần nhất của bạn là gì?'])
+    # fig, ax = plt.subplots()
+    # sns.heatmap(data_crosstab, annot=True, cmap="YlGnBu", fmt="d", ax=ax)
+    # ax.set_title('Liên hệ giữa hoàn cảnh gia đình và kết quả học tập')
+    # st.pyplot(fig)
 
 # Function to train and evaluate the model Randomforest
 def train_and_evaluate_models(df):
